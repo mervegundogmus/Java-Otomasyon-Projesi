@@ -1,4 +1,4 @@
-<h1 align='center'> FİLM ARŞİVİ 🎬 🎞 </h1>
+<h1 align='center'> FİLM ARŞİVİ 🎬</h1>
 
 # Java Otomasyon Projesi
 
