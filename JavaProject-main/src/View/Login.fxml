@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #487eb0;">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="102.0" layoutX="199.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/login.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" layoutX="139.0" layoutY="336.0" prefHeight="43.0" prefWidth="222.0" text="FİLM ARŞİVİ" textFill="#e3f2fd">
+               <font>
+                  <Font name="Rockwell" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="401.0" text="Herkes kendi filminde başrol oynar." textFill="#e3f2fd">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;">
+         <children>
+            <TextField layoutX="134.0" layoutY="178.0" prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField layoutX="134.0" layoutY="254.0" prefHeight="50.0" prefWidth="250.0" promptText="Şifre">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="184.0" layoutY="332.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="GİRİŞ" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="134.0" layoutY="513.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #487eb0;" text="HEMEN ÜYE OL" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="35.0" nodeOrientation="INHERIT">
+                     <image>
+                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/signup.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="447.0" layoutY="6.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="46.0" style="-fx-background-color: #7ed6df;" textFill="#e7d799f5" />
+            <Button layoutX="453.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="46.0" style="-fx-background-color: #7ed6df;" textFill="#e7d799f5">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="28.0">
+                     <image>
+                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;" visible="false">
+         <children>
+            <VBox layoutX="138.0" layoutY="125.0" prefHeight="270.0" prefWidth="250.0" spacing="25.0">
+               <children>
+                  <TextField prefHeight="50.0" prefWidth="250.0" promptText="Ad">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="50.0" prefWidth="250.0" promptText="Soyad">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField prefHeight="50.0" prefWidth="250.0" promptText="Şifre">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </VBox>
+            <Button layoutX="188.0" layoutY="438.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="ÜYE OL" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="453.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="46.0" style="-fx-background-color: #7ed6df;" textFill="#e7d799f5">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="28.0">
+                     <image>
+                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="138.0" layoutY="530.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #487eb0;" text="Giriş Ekranına Dön" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="26.0">
+                     <image>
+                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
