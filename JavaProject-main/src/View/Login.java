@@ -5,15 +5,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseEvent;
+
+import javafx.event.ActionEvent;
 import java.io.IOException;
 
 public class Login
@@ -100,27 +102,27 @@ public class Login
 
     //Butonların arka plan renginin ayarlanması için yazılmış kodlar.
     @FXML
-    public void btnEnteredLogin (MouseEvent event) { btnLogin.styleProperty().set("-fx-background-color: #3F51B5"); }
+    public void btnEnteredLogin (MouseEvent event) { btnLogin.styleProperty().set("-fx-background-color:  #487eb0"); }
     @FXML
-    public void btnExitedLogin (MouseEvent event) { btnLogin.styleProperty().set("-fx-background-color:  #283593"); }
+    public void btnExitedLogin (MouseEvent event) { btnLogin.styleProperty().set("-fx-background-color:   #487eb0"); }
     @FXML
-    public void btnEnteredNowSignup (MouseEvent event) { btnNowSignup.styleProperty().set("-fx-background-color: #3F51B5"); }
+    public void btnEnteredNowSignup (MouseEvent event) { btnNowSignup.styleProperty().set("-fx-background-color:  #487eb05"); }
     @FXML
-    public void btnExitedNowSignup (MouseEvent event) { btnNowSignup.styleProperty().set("-fx-background-color:  #283593"); }
+    public void btnExitedNowSignup (MouseEvent event) { btnNowSignup.styleProperty().set("-fx-background-color:   #487eb0"); }
     @FXML
     public void btnEnteredSignup (MouseEvent event) { btnSignUp.styleProperty().set("-fx-background-color: #3F51B5"); }
     @FXML
-    public void btnExitedSignup (MouseEvent event) { btnSignUp.styleProperty().set("-fx-background-color:  #283593"); }
+    public void btnExitedSignup (MouseEvent event) { btnSignUp.styleProperty().set("-fx-background-color:   #487eb0"); }
     @FXML
-    public void btnEnteredReturnLogin (MouseEvent event) { btnReturnLogin.styleProperty().set("-fx-background-color: #3F51B5"); }
+    public void btnEnteredReturnLogin (MouseEvent event) { btnReturnLogin.styleProperty().set("-fx-background-color:  #487eb0"); }
     @FXML
-    public void btnExitedReturnLogin (MouseEvent event) { btnReturnLogin.styleProperty().set("-fx-background-color:  #283593"); }
+    public void btnExitedReturnLogin (MouseEvent event) { btnReturnLogin.styleProperty().set("-fx-background-color:   #487eb0"); }
     @FXML
     public void btnEnteredCloseLogin (MouseEvent event) { btnLoginClose.styleProperty().set("-fx-background-color: #FFFFFF"); }
     @FXML
-    public void btnExitedCloseLogin (MouseEvent event) { btnLoginClose.styleProperty().set("-fx-background-color:  #E3F2FD"); }
+    public void btnExitedCloseLogin (MouseEvent event) { btnLoginClose.styleProperty().set("-fx-background-color:   #7ed6df"); }
     @FXML
     public void btnEnteredCloseSignup (MouseEvent event) { btnCloseSignup.styleProperty().set("-fx-background-color: #FFFFFF"); }
     @FXML
-    public void btnExitedCloseSignup (MouseEvent event) { btnCloseSignup.styleProperty().set("-fx-background-color:  #E3F2FD"); }
+    public void btnExitedCloseSignup (MouseEvent event) { btnCloseSignup.styleProperty().set("-fx-background-color:   #7ed6df"); }
 }

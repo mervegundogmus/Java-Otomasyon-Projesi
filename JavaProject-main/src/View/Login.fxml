@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Login">
    <children>
       <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #487eb0;">
          <children>
@@ -32,31 +31,31 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;">
+      <AnchorPane fx:id="pane" layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;">
          <children>
-            <TextField layoutX="134.0" layoutY="178.0" prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı">
+            <TextField fx:id="textLogUserName" layoutX="134.0" layoutY="178.0" prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>
             </TextField>
-            <PasswordField layoutX="134.0" layoutY="254.0" prefHeight="50.0" prefWidth="250.0" promptText="Şifre">
+            <PasswordField fx:id="textLogPassword" layoutX="134.0" layoutY="254.0" prefHeight="50.0" prefWidth="250.0" promptText="Şifre">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>
             </PasswordField>
-            <Button layoutX="184.0" layoutY="332.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="GİRİŞ" textFill="WHITE">
+            <Button fx:id="btnLogin" layoutX="184.0" layoutY="332.0" mnemonicParsing="false" onAction="#loginClick" onMouseEntered="#btnEnteredLogin" onMouseExited="#btnExitedLogin" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="GİRİŞ" textFill="WHITE">
                <font>
                   <Font name="Calibri" size="24.0" />
                </font>
             </Button>
-            <Button layoutX="134.0" layoutY="513.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #487eb0;" text="HEMEN ÜYE OL" textFill="WHITE">
+            <Button fx:id="btnNowSignup" layoutX="134.0" layoutY="513.0" mnemonicParsing="false" onAction="#signUpClick" onMouseEntered="#btnEnteredNowSignup" onMouseExited="#btnExitedNowSignup" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #487eb0;" text="HEMEN ÜYE OL" textFill="WHITE">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="34.0" fitWidth="35.0" nodeOrientation="INHERIT">
                      <image>
-                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/signup.png" />
+                        <Image url="@../Images/signup.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -66,40 +65,40 @@
                <graphic>
                   <ImageView fitHeight="27.0" fitWidth="28.0">
                      <image>
-                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/close.png" />
+                        <Image url="@../Images/close.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;" visible="false">
+      <AnchorPane fx:id="panelSignup" layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;">
          <children>
             <VBox layoutX="138.0" layoutY="125.0" prefHeight="270.0" prefWidth="250.0" spacing="25.0">
                <children>
-                  <TextField prefHeight="50.0" prefWidth="250.0" promptText="Ad">
+                  <TextField fx:id="textSignName" prefHeight="50.0" prefWidth="250.0" promptText="Ad">
                      <font>
                         <Font name="Calibri" size="18.0" />
                      </font>
                   </TextField>
-                  <TextField prefHeight="50.0" prefWidth="250.0" promptText="Soyad">
+                  <TextField fx:id="textSignSurname" prefHeight="50.0" prefWidth="250.0" promptText="Soyad">
                      <font>
                         <Font name="Calibri" size="18.0" />
                      </font>
                   </TextField>
-                  <TextField prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı">
+                  <TextField fx:id="textSignUserName" prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı">
                      <font>
                         <Font name="Calibri" size="18.0" />
                      </font>
                   </TextField>
-                  <PasswordField prefHeight="50.0" prefWidth="250.0" promptText="Şifre">
+                  <PasswordField fx:id="textSignPassword" prefHeight="50.0" prefWidth="250.0" promptText="Şifre">
                      <font>
                         <Font name="Calibri" size="18.0" />
                      </font>
                   </PasswordField>
                </children>
             </VBox>
-            <Button layoutX="188.0" layoutY="438.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="ÜYE OL" textFill="WHITE">
+            <Button fx:id="btnSignUp" layoutX="188.0" layoutY="438.0" mnemonicParsing="false" onAction="#signUpClickDb" onMouseEntered="#btnEnteredSignup" onMouseExited="#btnExitedSignup" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="ÜYE OL" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="18.0" />
                </font>
@@ -108,19 +107,19 @@
                <graphic>
                   <ImageView fitHeight="27.0" fitWidth="28.0">
                      <image>
-                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/close.png" />
+                        <Image url="@../Images/close.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="138.0" layoutY="530.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #487eb0;" text="Giriş Ekranına Dön" textFill="WHITE">
+            <Button fx:id="btnReturnLogin" layoutX="138.0" layoutY="530.0" mnemonicParsing="false" onAction="#turnBackLogin" onMouseEntered="#btnEnteredReturnLogin" onMouseExited="#btnExitedReturnLogin" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #487eb0;" text="Giriş Ekranına Dön" textFill="WHITE">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="26.0">
                      <image>
-                        <Image url="@../../../../Users/merve/Downloads/JavaProject-main/JavaProject-main/src/Images/back.png" />
+                        <Image url="@../Images/back.png" />
                      </image>
                   </ImageView>
                </graphic>
