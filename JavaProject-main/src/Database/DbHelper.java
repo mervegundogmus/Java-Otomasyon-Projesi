@@ -9,7 +9,7 @@ public class DbHelper
     public Connection getConnection() throws SQLException
     {
         final String userName = "root";
-        final String password = "root123";
+        final String password = "";
         final String dbUrl = "jdbc:mysql://localhost:3306/library?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         return DriverManager.getConnection(dbUrl,userName,password);
     }

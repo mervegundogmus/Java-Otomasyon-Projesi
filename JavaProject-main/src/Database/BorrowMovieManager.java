@@ -15,7 +15,7 @@ public class BorrowMovieManager implements IBaseManager
         PreparedStatement statement;
         try{
             connection = helper.getConnection();
-            String sql = "insert into borrowbook (MOVIE_NAME, ACTOR_NAME, DIRECTOR_NAME, IMDBSCORE, TYPE, USER_NAME) values (?,?,?,?,?)";
+            String sql = "insert into borrowbook (MOVIE_NAME, ACTOR_NAME, DIRECTOR_NAME, IMDBSCORE, TYPE, USER_NAME) values (?,?,?,?,?,?)";
             statement = connection.prepareStatement(sql);
             statement.setString(1, movieName);
             statement.setString(2, actorName);
