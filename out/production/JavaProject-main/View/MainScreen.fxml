@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainScreen">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="304.0" style="-fx-background-color: #487eb0;">
+         <children>
+            <AnchorPane prefHeight="650.0" prefWidth="300.0">
+               <children>
+                  <Pane layoutY="204.0" prefHeight="2.0" prefWidth="304.0" style="-fx-background-color: #FFFFFF;" />
+                  <Button fx:id="btnProfil" layoutX="115.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#menuProfilClick" onMouseEntered="#btnEnteredProfil" onMouseExited="#btnExitedProfil" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: #7ed6df;" text="PROFİL" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="115.0" layoutY="3.0">
+                     <image>
+                        <Image url="@../../../../JavaProject-main/src/Images/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="5.0" layoutY="126.0" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #487eb0;" text="ADI SOYADI:" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="163.0" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #487eb0;" text="KULLANICI ADI:" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelName" layoutX="140.0" layoutY="126.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #487eb0;">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelSurname" layoutX="140.0" layoutY="163.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #487eb0;">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox layoutY="206.0" prefHeight="443.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAnasayfa" onMouseClicked="#menuAnasayfaClick" onMouseEntered="#enteredAnasayfa" onMouseExited="#exitedAnasayfa" prefHeight="64.0" prefWidth="300.0" text="ANASAYFA" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../../../../JavaProject-main/src/Images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblFilmler" onMouseClicked="#menuFilmlerClick" onMouseEntered="#enteredFilmler" onMouseExited="#exitedFimler" prefHeight="63.0" prefWidth="300.0" text="FİLMLER" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../Images/movie.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblFilmOduncAl" onMouseClicked="#menuOduncAlClick" onMouseEntered="#enteredFilmOduncAl" onMouseExited="#exitedFilmOduncAl" prefHeight="64.0" prefWidth="300.0" text="FİLM ÖDÜNÇ AL" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../Images/open-movie.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblFilmIadeEt" onMouseClicked="#menuIadeEtClick" onMouseEntered="#enteredFilmIadeEt" onMouseExited="#exitedFilmIadeEt" prefHeight="64.0" prefWidth="300.0" text="FİLMİ İADE ET" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../Images/returning.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblFilmEkle" onMouseClicked="#menuFilmEkleClick" onMouseEntered="#enteredFilmEkle" onMouseExited="#exitedFilmEkle" prefHeight="64.0" prefWidth="300.0" text="FİLM EKLE" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../Images/addMovie.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblArsivBilgileri" onMouseClicked="#menuArsivBilgileriClick" onMouseEntered="#enteredArsivBilgileri" onMouseExited="#exitedArsivBilgileri" prefHeight="64.0" prefWidth="300.0" text="ARŞİV BİLGİLERİ" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../Images/online-learning.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblCikis" onMouseClicked="#menuCikisClick" onMouseEntered="#enteredCikis" onMouseExited="#exitedCikis" prefHeight="64.0" prefWidth="300.0" text="ÇIKIŞ" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../Images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelAnasayfa" layoutX="306.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;" visible="false">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="301.0" layoutY="100.0">
+               <image>
+                  <Image url="@../Images/girl.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="245.0" layoutY="222.0" prefHeight="30.0" prefWidth="212.0" text="Merve GÜNDOĞMUŞ" textFill="#e07075">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="244.0" layoutY="259.0" prefHeight="30.0" prefWidth="212.0" text="merveegundogmus@gmail.com">
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="36.0">
+                     <image>
+                        <Image url="@../Images/gmail.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="237.0" layoutY="313.0" prefHeight="35.0" prefWidth="224.0" text="PROJE HAKKINDA" textFill="#487eb0">
+               <font>
+                  <Font name="Calibri Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="365.0" prefHeight="30.0" prefWidth="447.0" text="Bu proje Kodluyoruz Ankara Java Bootcamp 2021 için ">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="395.0" prefHeight="30.0" prefWidth="510.0" text="Merve Gündoğmuş tarafından proje ödevi olarak yapılmıştır.">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="425.0" prefHeight="30.0" prefWidth="582.0" text="Herkes tarafından kullanılması kolay olması için proje geliştirilirken ">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="455.0" prefHeight="30.0" prefWidth="478.0" text="bir çok farklı tasarım denenmiş en sonunda basit ve sade ">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="485.0" prefHeight="30.0" prefWidth="542.0" text="bir tasarım seçilmiştir. Herhangi bir sorunuz olduğunda yukarıda">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="155.0" layoutY="515.0" prefHeight="30.0" prefWidth="356.0" text="verilen e-posta adresinden ulaşabilirsiniz.">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelFilmler" layoutX="306.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;" visible="false">
+         <children>
+            <TextField fx:id="textMovieSearch" layoutX="167.0" layoutY="8.0" prefHeight="38.0" prefWidth="522.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="14.0" text="ARAMA KUTUSU">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableMovie" layoutX="11.0" layoutY="61.0" prefHeight="582.0" prefWidth="678.0">
+               <columns>
+                  <TableColumn fx:id="columnMovieFilmAdi" prefWidth="169.60003662109375" text="FİLM ADI" />
+                  <TableColumn fx:id="columnMovieOyuncuAdi" minWidth="0.0" prefWidth="221.5999755859375" text="OYUNCULAR" />
+                  <TableColumn fx:id="columnMovieYonetmenAdi" minWidth="0.0" prefWidth="97.5999755859375" text="YÖNETMEN" />
+                  <TableColumn fx:id="columnMovieImdbPuani" minWidth="0.0" prefWidth="44.7999267578125" text="IMDB" />
+                  <TableColumn fx:id="columnMovieTuru" minWidth="0.0" prefWidth="154.4000244140625" text="TÜRÜ" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelOduncAl" layoutX="306.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;" visible="false">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="300.0" layoutY="130.0">
+               <image>
+                  <Image url="@../Images/borrowmovie.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textBorrowMovieName" layoutX="225.0" layoutY="338.0" prefHeight="50.0" prefWidth="250.0" promptText="FİLM ADI">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textBorrowUserName" layoutX="225.0" layoutY="262.0" prefHeight="50.0" prefWidth="250.0" promptText="KULLANICI ADI">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnBorrow" layoutX="275.0" layoutY="422.0" mnemonicParsing="false" onAction="#borrowMovie" onMouseEntered="#btnEnteredBorrow" onMouseExited="#btnExitedBorrow" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="ÖDÜNÇ AL" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelIadeEt" layoutX="306.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;" visible="false">
+         <children>
+            <TextField fx:id="textReturnUserName" layoutX="225.0" layoutY="267.0" minHeight="50.0" minWidth="250.0" promptText="KULLANICI ADI">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textReturnMovieName" layoutX="225.0" layoutY="348.0" minHeight="50.0" minWidth="250.0" promptText="FİLM ADI">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="202.0" fitWidth="206.0" layoutX="249.0" layoutY="58.0">
+               <image>
+                  <Image url="@../Images/returnmovie.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnReturn" layoutX="275.0" layoutY="420.0" mnemonicParsing="false" onAction="#returnMovie" onMouseEntered="#btnEnteredReturn" onMouseExited="#btnExitedRetrun" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="İADE ET" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelArsivBilgileri" layoutX="306.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;">
+         <children>
+            <Pane layoutX="50.0" layoutY="59.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #9FA8DA;">
+               <children>
+                  <Label fx:id="labelNumberOfMovie" layoutX="111.0" layoutY="6.0" prefHeight="55.0" prefWidth="100.0" text="100" textFill="#f1f4f4">
+                     <font>
+                        <Font name="Calibri Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelNumberOfUser" layoutX="422.0" layoutY="6.0" prefHeight="55.0" prefWidth="42.0" text="20" textFill="#f1f4f4">
+                     <font>
+                        <Font name="Calibri Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textNumberOfMovie" layoutX="95.0" layoutY="55.0" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #9FA8DA;" text="FİLM SAYISI">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="textNumberOfUser" layoutX="394.0" layoutY="55.0" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #9FA8DA;" text="ÜYE SAYISI">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Label layoutX="185.0" layoutY="199.0" text="FİLM ARŞİVİ HAKKINDA" textFill="#ef5350">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="245.0" prefHeight="26.0" prefWidth="542.0" text="Güzel ve keyifli vakit geçirerek film izlemenize yardımcı olmak amacıyla">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="271.0" prefHeight="22.0" prefWidth="522.0" text="film arşivimiz kurulmuştur. İçeriğinde popüler birçok yerli ve yabancı ">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="297.0" prefHeight="18.0" prefWidth="590.0" text="film barındıran arşivimizden, istediğiniz filmi geri iade etmek koşuluyla">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="323.0" prefHeight="18.0" prefWidth="590.0" text="ödünç alabilirsiniz.">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="361.0" text="İLETİŞİM" textFill="#487eb0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="404.0" text="   filmarsivi@gmail.com">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/gmail.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="451.0" text="   (0222) 231-0626">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/phone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="497.0" text="   İstiklâl Mah. Şirin Sk. No: 34 Odunpazarı/ ESKİŞEHİR">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/address.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelFilmEkle" layoutX="306.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;" visible="false">
+         <children>
+            <VBox layoutX="225.0" layoutY="70.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="textMovieName" prefHeight="50.0" prefWidth="250.0" promptText="FİLM ADI">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="textActorName" prefHeight="50.0" prefWidth="250.0" promptText="OYUNCU ADI">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="textDirectorName" prefHeight="50.0" prefWidth="250.0" promptText="YÖNETMEN ADI">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="textImdbScore" prefHeight="50.0" prefWidth="250.0" promptText="IMDB PUANI">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="comboBoxType" prefHeight="50.0" prefWidth="250.0" promptText="TÜRÜ" style="-fx-background-color: white;" />
+                  <TextField fx:id="textAdminUserName" prefHeight="50.0" prefWidth="250.0" promptText="PERSONEL KULLANICI ADI">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="textAdminPassword" prefHeight="50.0" prefWidth="250.0" promptText="PERSONEL ŞİFRE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </VBox>
+            <Button fx:id="btnAdd" layoutX="275.0" layoutY="565.0" mnemonicParsing="false" onAction="#addMovieClick" onMouseEntered="#btnEnteredAdd" onMouseExited="#btnExitedAdd" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #487eb0;" text="FİLM EKLE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelCikis" layoutX="306.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;" visible="false">
+         <children>
+            <Pane layoutX="100.0" layoutY="250.0" prefHeight="150.0" prefWidth="500.0" style="-fx-background-color: #487eb0;">
+               <children>
+                  <Label layoutX="142.0" layoutY="14.0" text="EMİN MİSİNİZ?" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnExit" layoutX="175.0" layoutY="86.0" mnemonicParsing="false" onAction="#clickExit" onMouseEntered="#btnEnteredExit" onMouseExited="#btnExitedExit" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: ef5350;" text="ÇIKIŞ YAP" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelProfil" layoutX="307.0" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #7ed6df;">
+         <children>
+            <Label fx:id="textProfilBorrowMovie" layoutX="350.0" layoutY="383.0" text="Yok" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="290.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../JavaProject-main/src/Images/user.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="134.0" layoutY="280.0" prefHeight="120.0" prefWidth="215.0" spacing="25.0">
+               <children>
+                  <Label alignment="TOP_LEFT" text="AD - SOYAD : " textFill="#487eb0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="90.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="KULLANICI ADI :" textFill="#487eb0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="60.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="ÖDÜNÇ ALINAN KİTAP : " textFill="#487eb0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label fx:id="textProfilName" layoutX="349.0" layoutY="280.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="textProfilUserName" layoutX="350.0" layoutY="332.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
