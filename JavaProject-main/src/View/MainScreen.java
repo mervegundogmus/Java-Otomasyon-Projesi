@@ -19,11 +19,11 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.fxml.Initializable;
+
 import javax.swing.*;
-import java.awt.*;
+
 import javafx.event.ActionEvent;
-import javafx.scene.input.MouseEvent;
+
 import java.net.URL;
 import java.sql.SQLException;
 
@@ -32,8 +32,7 @@ import java.util.function.Predicate;
 import javafx.scene.control.Button;
 
 
-public class MainScreen
-{
+public class MainScreen {
     @FXML private AnchorPane panelAnasayfa;
     @FXML private AnchorPane panelFilmler;
     @FXML private AnchorPane panelOduncAl;

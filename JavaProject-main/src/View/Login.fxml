@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Login">
    <children>
-      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #487eb0;">
+      <AnchorPane prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #487eb0;">
          <children>
             <ImageView fitHeight="105.0" fitWidth="102.0" layoutX="199.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -31,7 +31,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="pane" layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;">
+      <AnchorPane fx:id="pane" layoutX="500.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;">
          <children>
             <TextField fx:id="textLogUserName" layoutX="134.0" layoutY="178.0" prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı">
                <font>
@@ -63,7 +63,7 @@
             <Button layoutX="447.0" layoutY="6.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="46.0" style="-fx-background-color: #7ed6df;" textFill="#e7d799f5" />
             <Button layoutX="453.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="46.0" style="-fx-background-color: #7ed6df;" textFill="#e7d799f5">
                <graphic>
-                  <ImageView fitHeight="27.0" fitWidth="28.0">
+                  <ImageView fx:id="btnLoginClose" fitHeight="27.0" fitWidth="28.0" onMouseEntered="#btnEnteredCloseLogin" onMouseExited="#btnExitedCloseLogin">
                      <image>
                         <Image url="@../Images/close.png" />
                      </image>
@@ -72,7 +72,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="panelSignup" layoutX="499.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;">
+      <AnchorPane fx:id="panelSignup" layoutX="500.0" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #7ed6df;" visible="false">
          <children>
             <VBox layoutX="138.0" layoutY="125.0" prefHeight="270.0" prefWidth="250.0" spacing="25.0">
                <children>
@@ -105,7 +105,7 @@
             </Button>
             <Button layoutX="453.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="46.0" style="-fx-background-color: #7ed6df;" textFill="#e7d799f5">
                <graphic>
-                  <ImageView fitHeight="27.0" fitWidth="28.0">
+                  <ImageView fx:id="btnCloseSignup" fitHeight="27.0" fitWidth="28.0" onMouseEntered="#btnEnteredCloseSignup" onMouseExited="#btnExitedCloseSignup">
                      <image>
                         <Image url="@../Images/close.png" />
                      </image>
